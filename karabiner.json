@@ -1400,7 +1400,11 @@
                     "modifiers": ["left_command"]
                   }
                 ],
-                "type": "basic"
+                "type": "basic",
+                "conditions": [{
+                  "type": "frontmost_application_if",
+                  "bundle_identifiers": ["^com\\.google\\.Chrome$"]
+                }]
               }
             ]
           }
